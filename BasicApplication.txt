@@ -1,0 +1,55 @@
+ASSIGNMENT
+==========
+Your 6 year old client needs an application that will receive an integer
+from the user banging on the keyboard, add 5 to it, double it, subtract 7 from it,
+and display the result to the screen.
+
+ALGORITHM
+=========
+create a variable X
+ask user to input a number
+save the input to variable X
+add 5 to the value in variable X and save the result back in variable X
+multiply the value in variable X by 2 and save the result back in variable X
+subtract 7 from the value in variable X and save the result back in variable X
+display the value of variable X on the screen
+
+
+PSEUDOCODE
+==========
+
+Variables
+integer theInt
+
+START
+    define integer theInt
+    display prompt to user asking for an integer to be banged onto the keyboard
+    set theInt to the input
+    set theInt to theInt + 5
+    set theInt to theInt x 2
+    set theInt to theInt - 7
+    display "The result is"
+    display theInt
+END
+
+
+TEST
+====
+
+Input 5
+theInt = 5
+theInt + 5 = 10
+theInt * 2 = 20
+theInt - 7 = 13
+Output = 13
+
+Input 11
+theInt = 5
+theInt + 5 = 16
+theInt * 2 = 32
+theInt - 7 = 25
+Output = 25
+
+
+
+

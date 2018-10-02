@@ -1,0 +1,128 @@
+ASSIGNMENT
+==========
+A program is needed to prompt the user operator for ten exam scores,
+calculate the average score and display the result to the screen.
+The average score is calculated as the sum of the scores divided by the number of scores.
+
+VARIABLES
+=========
+integer int01
+integer int02
+integer int03
+integer int04
+integer int05
+integer int06
+integer int07
+integer int08
+integer int09
+integer int09
+integer intSum
+integer intCount
+float fResult
+
+ALGORITHM
+=========
+define integers int01, int02, int03, int04, int05, int06, int07, int08, int09, int10, to hold input values
+define integers intSum, intCount for use in calculation
+define float fResult to hold result of average calculation
+set intCount to 1
+while intCount is less than 11 (ask for more input)
+    ask user for input
+    store the input in appropriate variable
+    increment intCount
+endwhile
+add int01 + int02 + int03 + int04 + int05 + int06 + int07 + int08 + int09 + int10 and store the result in intSum
+set fResult = intSum / 10 to calculate the average of the 10 values
+display the average is intResult
+
+PSEUDOCODE
+==========
+
+START
+    define integer int01
+    define integer int02
+    define integer int03
+    define integer int04
+    define integer int05
+    define integer int06
+    define integer int07
+    define integer int08
+    define integer int09
+    define integer int10
+    define integer intSum
+    define integer intCount
+    define float fResult
+    set intCount = 0
+    WHILE intCount < 10
+        display "please enter an integer"
+        IF intCount = 0
+            int01 = input
+        ENDIF
+        IF intCount = 1
+            int02 = input
+        ENDIF
+        IF intCount = 2
+            int03 = input
+        ENDIF
+        IF intCount = 3
+            int04 = input
+        ENDIF
+        IF intCount = 4
+            int05 = input
+        ENDIF
+        IF intCount = 5
+            int06 = input
+        ENDIF
+        IF intCount = 6
+            int07 = input
+        ENDIF
+        IF intCount = 7
+            int08 = input
+        ENDIF
+        IF intCount = 8
+            int09 = input
+        ENDIF
+        IF intCount = 9
+            int10 = input
+        ENDIF
+    ENDWHILE
+    intSum = int01 + int02 + int03 + int04 + int05 + int06 + int07 + int08 + int09 + int10
+    floatResult = intSum / 10
+    PRINT "the average is "
+    PRINT intResult
+END
+
+
+TEST
+====
+
+Input01 = 127
+Input02 = 16
+Input03 = 4
+Input04 = 78
+Input05 = 3
+Input06 = 2067
+Input07 = 1
+Input08 = 99
+Input09 = 37
+Input10 = 44
+intSum = 2476
+fResult = 246.6
+Output = the average is 247.6
+
+
+Input01 = 66
+Input02 = 245
+Input03 = 78
+Input04 = 71
+Input05 = 495
+Input06 = 111
+Input07 = 55
+Input08 = 666
+Input09 = 1984
+Input10 = 2018
+intSum = 5789
+fResult = 578.9
+Output = the average is 578.9
+
+

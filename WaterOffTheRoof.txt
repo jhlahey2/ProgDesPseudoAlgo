@@ -1,0 +1,88 @@
+ASSIGNMENT
+==========
+How much water runs off a roof in a rain storm?
+
+To calculate the runoff from any given rainfall: Take the dimensions of the footprint of the roof
+and convert them to inches.
+(So, a 50' x 20' roof is 600" x 240").
+Multiply the roof dimensions by the number of inches of rainfall.
+In this example, 600" x 240" x 1" = 144,000 cubic inches of water.
+Divide that result by 231 to get the number of gallons (because 1 gallon = 231 cubic inches). (144,000/231 = 623.38).
+
+VARIABLES
+=========
+integer inputLength
+integer inchLength
+integer inputWidth
+integer inchWidth
+integer inputRainfall
+integer gallons
+float fResult
+
+ALGORITHM
+=========
+define integer inputLength for input length of roof in feet
+define integer inchLength for length of roof in inches
+define integer inputWidth for input width of roof in feet
+define integer inchWidth for width of roof of roof in inches
+define integer gallons as a constant to use in calculation
+define float fResult to hold the result of the calculation
+
+set gallons to 231
+
+display "enter length of house in feet as an integer"
+set inputLength to input
+display "enter width of house in feet as an integer"
+set inputLength to input
+display "enter amount of rainfall in inchees as an integer"
+set inputRainfall to input
+set inchLength = inputLength * 12
+set inchWidth = inputWidth * 12
+set intResult = (inchLength * inchWidth * inchRainfall) / gallons
+display The runoff is intResult gallons
+
+
+
+PSEUDOCODE
+==========
+
+START
+    define integer inputLength
+    define integer inchLength
+    define integer inputWidth
+    define integer inchWidth
+    define integer inputRainfall
+    define integer gallons
+    define integer intResult
+
+    set gallons = 231
+    PRINT "enter length of house in feet as an integer"
+    set inputLength = input
+    PRINT "enter width of house in feet as an integer"
+    set inputWidth = input
+    PRINT "enter amount of rainfall in inchees as an integer"
+    set inputRainfall = input
+
+    set inchLength = inputLength * 12
+    set inchWidth = inputWidth * 12
+    set intResult = (inchLength * inchWidth * inchRainfall) / gallons
+
+    PRINT "The runoff is "
+    PRINT intResult
+    PRINT "gallons"
+END
+
+
+TEST
+====
+
+inputLength = 100
+inputWidth = 80
+inputRainfall = 5
+output = The runnoff is 24935.065 gallons
+
+inputLength = 60
+inputWidth = 40
+inputRainfall = 2
+output = The runnoff is 2992.208 gallons
+

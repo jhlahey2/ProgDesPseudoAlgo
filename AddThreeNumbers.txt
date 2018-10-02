@@ -1,0 +1,71 @@
+ASSIGNMENT
+==========
+His little sister now wants a program to read three numbers, add them together and print their total.
+
+
+VARIABLES
+=========
+integer intFirst
+integer intSecond
+integer intThird
+integer intResult
+integer intCount
+
+ALGORITHM
+=========
+define integers intFirst, intSecond, intThird, to hold the input
+define integer intResult to hold the result
+define integer intCount to hold the count
+set intCount to 1
+while intCount is less than 4 (keep asking for input)
+    ask for input
+    store the input in appropriate variable
+    increment intCount
+endwhile
+add intFirst + intSecond + intThird and store the result in intResult
+display the sum is intResult
+
+PSEUDOCODE
+==========
+
+START
+    define integer intFirst
+    define integer intSecond
+    define integer intThird
+    define integer intResult
+    define integer intCount
+    set intCount = 0
+    WHILE intCount < 3
+        display "please enter an integer"
+        IF intCount = 0
+            intFirst = input
+        ENDIF
+        IF intCount = 1
+            intSecond = input
+        ENDIF
+        IF intCount = 2
+            intThird = input
+        ENDif
+        intCount = intCount + 1
+    ENDWHILE
+    intResult = intFirst + intSecond + intThird
+    PRINT "the sum is "
+    PRINT intResult
+END
+
+
+TEST
+====
+
+Input = 8
+Input = 9
+Input = 10
+intResult = 27
+Output = the sum is 27
+
+Input = 83
+Input = 2
+Input = 5
+intResult = 90
+Output = the sum is 90
+
