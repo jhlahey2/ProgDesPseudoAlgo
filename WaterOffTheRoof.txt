@@ -38,8 +38,8 @@ display "enter amount of rainfall in inchees as an integer"
 set inputRainfall to input
 set inchLength = inputLength * 12
 set inchWidth = inputWidth * 12
-set intResult = (inchLength * inchWidth * inchRainfall) / gallons
-display The runoff is intResult gallons
+set intRunoffGallons = (inchLength * inchWidth * inchRainfall) / gallons
+display The runoff is intRunoffGallons gallons
 
 
 
@@ -47,29 +47,27 @@ PSEUDOCODE
 ==========
 
 START
-    define integer inputLength
-    define integer inchLength
-    define integer inputWidth
-    define integer inchWidth
-    define integer inputRainfall
-    define integer gallons
-    define integer intResult
+    DEFINE integer inputLength
+    DEFINE integer inchLength
+    DEFINE integer inputWidth
+    DEFINE integer inchWidth
+    DEFINE integer inputRainfall
+    DEFINE integer inch2gallon
+    DEFINE integer intRunoffGallons
 
-    set gallons = 231
+    inch2gallon = 231
     PRINT "enter length of house in feet as an integer"
-    set inputLength = input
+    inputLength = INPUT
     PRINT "enter width of house in feet as an integer"
-    set inputWidth = input
+    inputWidth = INPUT
     PRINT "enter amount of rainfall in inchees as an integer"
-    set inputRainfall = input
+    inputRainfall = INPUT
 
-    set inchLength = inputLength * 12
-    set inchWidth = inputWidth * 12
-    set intResult = (inchLength * inchWidth * inchRainfall) / gallons
+    inchLength = inputLength * 12
+    inchWidth = inputWidth * 12
+    intRunoffGallons = (inchLength * inchWidth * inchRainfall) / inch2gallon
 
-    PRINT "The runoff is "
-    PRINT intResult
-    PRINT "gallons"
+    PRINT "The runoff is " + intRunoffGallons + "gallons"
 END
 
 
@@ -79,10 +77,10 @@ TEST
 inputLength = 100
 inputWidth = 80
 inputRainfall = 5
-output = The runnoff is 24935.065 gallons
+output = The runoff is 24935.065 gallons
 
 inputLength = 60
 inputWidth = 40
 inputRainfall = 2
-output = The runnoff is 2992.208 gallons
+output = The runoff is 2992.208 gallons
 

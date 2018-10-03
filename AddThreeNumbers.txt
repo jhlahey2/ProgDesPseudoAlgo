@@ -29,28 +29,18 @@ PSEUDOCODE
 ==========
 
 START
-    define integer intFirst
-    define integer intSecond
-    define integer intThird
-    define integer intResult
-    define integer intCount
-    set intCount = 0
-    WHILE intCount < 3
-        display "please enter an integer"
-        IF intCount = 0
-            intFirst = input
-        ENDIF
-        IF intCount = 1
-            intSecond = input
-        ENDIF
-        IF intCount = 2
-            intThird = input
-        ENDif
+    DEFINE integer intInput
+    DEFINE integer intResult
+    DEFINE integer intCount
+    SET intCount = 1
+    SET intResult = 0
+    WHILE intCount < 4
+        display "please enter integer" = intCount
+        intInput = INPUT
+        intResult = intResult + intInput
         intCount = intCount + 1
     ENDWHILE
-    intResult = intFirst + intSecond + intThird
-    PRINT "the sum is "
-    PRINT intResult
+    PRINT "the sum is " = intResult
 END
 
 

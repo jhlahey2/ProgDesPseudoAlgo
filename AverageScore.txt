@@ -6,90 +6,50 @@ The average score is calculated as the sum of the scores divided by the number o
 
 VARIABLES
 =========
-integer int01
-integer int02
-integer int03
-integer int04
-integer int05
-integer int06
-integer int07
-integer int08
-integer int09
-integer int09
-integer intSum
+integer intInput
 integer intCount
-float fResult
+integer intMax
+float   fResult
 
 ALGORITHM
 =========
-define integers int01, int02, int03, int04, int05, int06, int07, int08, int09, int10, to hold input values
-define integers intSum, intCount for use in calculation
-define float fResult to hold result of average calculation
-set intCount to 1
-while intCount is less than 11 (ask for more input)
+DEFINE intInput     to hold input value
+DEFINE intCount     a counter for the loop
+DEFINE fResult      to hold the final result
+DEFINE intMax       the maximum number of allowed inputs
+
+SET intCount = 1    initial value
+SET intTotal = 0    initial value
+SET intMax = 10     maximum inputs
+
+WHILE intCount is less than 11 (ask for more input)
     ask user for input
-    store the input in appropriate variable
+    add the input to the total
     increment intCount
-endwhile
-add int01 + int02 + int03 + int04 + int05 + int06 + int07 + int08 + int09 + int10 and store the result in intSum
-set fResult = intSum / 10 to calculate the average of the 10 values
-display the average is intResult
+ENDWHILE
+
+SET fResult = intTotal / intMax to calculate the average of the 10 values
+PRINT the average is fResult
 
 PSEUDOCODE
 ==========
 
 START
-    define integer int01
-    define integer int02
-    define integer int03
-    define integer int04
-    define integer int05
-    define integer int06
-    define integer int07
-    define integer int08
-    define integer int09
-    define integer int10
-    define integer intSum
-    define integer intCount
-    define float fResult
-    set intCount = 0
-    WHILE intCount < 10
-        display "please enter an integer"
-        IF intCount = 0
-            int01 = input
-        ENDIF
-        IF intCount = 1
-            int02 = input
-        ENDIF
-        IF intCount = 2
-            int03 = input
-        ENDIF
-        IF intCount = 3
-            int04 = input
-        ENDIF
-        IF intCount = 4
-            int05 = input
-        ENDIF
-        IF intCount = 5
-            int06 = input
-        ENDIF
-        IF intCount = 6
-            int07 = input
-        ENDIF
-        IF intCount = 7
-            int08 = input
-        ENDIF
-        IF intCount = 8
-            int09 = input
-        ENDIF
-        IF intCount = 9
-            int10 = input
-        ENDIF
+    DEFINE integer intInput
+    DEFINE integer intCount
+    DEFINE integer intMax
+    DEFINE float    fResult
+    SET intCount = 1
+    SET intTotal = 0
+    SET intMax = 10
+    WHILE intCount < intMax + 1
+        display "please enter exam score" = intCount
+        intInput = INPUT
+        intTotal = intTotal + intInput
+        intCount = intCount + 1
     ENDWHILE
-    intSum = int01 + int02 + int03 + int04 + int05 + int06 + int07 + int08 + int09 + int10
-    floatResult = intSum / 10
-    PRINT "the average is "
-    PRINT intResult
+    fResult = intTotal / intMax
+    PRINT "the average exam score is " = fResult
 END
 
 
